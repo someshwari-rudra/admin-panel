@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Admin  Dashboard</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <div id="wrapper">
+    
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="p-2">
+                <div class=" d-flex justify-content-start align-items-center">
+                    <img class="ps-4 pe-2 py-2" src="/images/moneyLogo/icons8-money-bag-rupee-30.png" alt="img">
+                    <a class="navbar-brand"> Financially.</a>
+                </div>
+                <div class="side_menu ps-4 py-2">
+                    <p>Main Menu</p>
+                    <div class="dropdownMenu">
+                        <span href="" class="dashboard">
+                            <img src="images/dashboard/icons8-dashboard-layout-25.png" alt="" class="me-1">
+                            <span>Dashboard</span>
+                        </span>
+                        <i class="fa-solid fa-angle-down ms-4"></i>
+                    </div>
+                    <div class="dropdown_subMenu">
+                        <ul class="sub_menu">
+                            <li><img src="images/product.png" alt=""> Products</li>
+                            <li><img src="images/sales.png" alt=""> Sales</li>
+                            <li><img src="images/bank.png" alt=""> Banking <span class="new">new</span></li>
+            
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <span href="" class="dashboard">
+                            <img src="images/calender.png" alt="" class="me-2">
+                            <span>Calender</span>
+                        </span>
+                    </div>
+                    <div class="mt-4">
+                        <span href="" class="dashboard">
+                            <img src="images/statistic.png" alt="" class="me-2">
+                            <span>Statistics</span>
+                        </span>
+                    </div>
+                    <div class="mt-4">
+                        <span href="" class="dashboard">
+                            <img src="images/message.png" alt="" class="me-2">
+                            <span>Message <span class="message ms-4">2</span></span>
+                        </span>
+                    </div>
+                    <div class="mt-4">
+                        <span href="" class="dashboard">
+                            <img src="images/card.png" alt="" class="me-2">
+                            <span>Card <span class="new ms-5">new</span></span>
+                        </span>
+                    </div>
+                    <hr class="hrBreak mt-4">
+                    <div class="side_menu">
+                        <p>Account</p>
+                        <div class="mt-4">
+                            <span href="" class="dashboard">
+                                <img src="images/help.png" alt="" class="me-2">
+                                <span>help </span>
+                            </span>
+                        </div>
+                        <div class="mt-4">
+                            <span href="" class="dashboard">
+                                <img src="images/settings.png" alt="" class="me-2">
+                                <span>Settings <span class="new ms-3">new</span> </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="profile_info">
+                        <div class="profile_pic">
+                            <img src="images/profile_pic.jpeg" alt="" class="img-fluid">
+                        </div>
+                        <div class="profile_name">
+                            <span>someshwari</span>
+                            <span>Manager</span>
+                        </div>
+                        <div class="DropIcon">
+                            <i class="fa-solid fa-angle-down ms-3"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-12 col-12">
+                        <div class="sales_dashboard d-flex p-3">
+                            <div class="sales_dashboard_heading col-9 d-flex justify-content-start align-items-center">
+                                <span id="menu-toggle"><i class="fa-solid fa-bars"></i></span>
+                                <h1 class="ms-3">Sales Dashboard</h1>
+                            </div>
+                            <div class="icons col-3 d-flex justify-content-end align-items-center">
+                                <span class="sunIcon me-3"><img src="images/sun_icon.png" alt="" class=""></span>
+                                <img src="images/moon_icon.png" alt="" class="me-3">
+                                <img src="images/notification.png" alt="" class="me-3">
+                            </div>
+                        </div>
+                        <div class="card p-4 mx-4">
+                            <div class="row g-3 ">
+                                <div class=" col-lg-4 col-xs-12 col-12">
+                                    <div class="feature feature1">
+                                        <p>Total Revenue</p>
+                                        <div class="d-flex justify-content-between align-items-baseline">
+                                            <span class="SalesPrice">$203.376 </span>
+                                            <p class="SalesRate">+6.32%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-4 col-xs-12 col-12">
+                                    <div class="feature feature2">
+                                        <p>Total Customer</p>
+                                        <div class="d-flex justify-content-between align-items-baseline">
+                                            <span class="SalesPrice">$203.376 </span>
+                                            <p class="SalesRate">+6.32%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-4 col-xs-12 col-12">
+                                    <div class="feature feature3">
+                                        <p>Total Profit</p>
+                                        <div class="d-flex justify-content-between align-items-baseline">
+                                            <span class="SalesPrice">$203.376 </span>
+                                            <p class="SalesRate">+6.32%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 p-3">
+                                    <h1 class="spendingStatistics">Spending Statistic</h1>
+                                </div>
+                                <div class="col-md-6 p-3 d-flex justify-content-end align-items-center">
+                                    <div class="time">
+                                        <span class="me-3">Day</span>
+                                        <span class="me-3">Week</span>
+                                        <span class="me-3">Month</span>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                            <div class="Income">
+                                <p class="px-2 m-0 text-secondary fw-semibold">Income</p>
+                                <div class=" px-2">
+                                    <span class="IncomePrice m-0">$10.376,50 </span>
+                                    <span class="IncomeRate">+2.32%</span>
+                                </div>
+                                <p class="text-secondary px-2 m-0 fw-semibold   ">Total Income in week</p>
+                            </div>
+                            <div class="col-md-12">
+                                <canvas class="chartjs" id="GroupedChartID">
+                                </canvas>
+                            </div>
+                            <div class="col-md-12 my-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h1 class="customerTranstration">customer Transaction</h1>
+                                    <p>View All</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tr>
+                                            <th scope="col" width="5%"><input class="form-check-input" type="checkbox"></th>
+                                            <th class="text-secondary fw-semibold">Customer</th>
+                                            <th class="text-secondary fw-semibold">Item</th>    
+                                            <th class="text-secondary fw-semibold">Date</th>
+                                            <th class="text-secondary fw-semibold">Status</th>
+                                            <th class="text-secondary fw-semibold">Action</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col" width="5%"><input class="form-check-input" type="checkbox"></th>
+                                            <td>someshwari</td>
+                                            <td>Air max 75</td>
+                                            <td>22 Aug 2020</td>
+                                            <td> <button class="btn btn-outline-success rounded-pill py-0 px-3">Success</button> </td>
+                                            <td>
+                                                <span><i class="fa-regular fa-eye  me-2 text-secondary"></i></span>
+                                                <span><i class="fa-regular fa-trash-can  me-2 text-secondary"></i></span>
+                                                <span><i class="fa-solid fa-ellipsis text-secondary"></i></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col" width="5%"><input class="form-check-input" type="checkbox"></th>
+                                            <td>someshwari</td>
+                                            <td>Air max 75</td>
+                                            <td>22 Aug 2020</td>
+                                            <td> <button class="btn btn-outline-success rounded-pill py-0 px-3">Success</button> </td>
+                                            <td>
+                                                <span><i class="fa-regular fa-eye  me-2 text-secondary"></i></span>
+                                                <span><i class="fa-regular fa-trash-can  me-2 text-secondary"></i></span>
+                                                <span><i class="fa-solid fa-ellipsis text-secondary"></i></span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col" width="5%"><input class="form-check-input" type="checkbox"></th>
+                                            <td>someshwari</td>
+                                            <td>Air max 75</td>
+                                            <td>22 Aug 2020</td>
+                                            <td> <button class="btn btn-outline-success rounded-pill py-0 px-3">Success</button> </td>
+                                            <td>
+                                                <span><i class="fa-regular fa-eye  me-2 text-secondary"></i></span>
+                                                <span><i class="fa-regular fa-trash-can  me-2 text-secondary"></i></span>
+                                                <span><i class="fa-solid fa-ellipsis text-secondary"></i></span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-12">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                           <div class="CustomerByCountry mt-2">
+                            <p class="m-0">Customer By Country</p>
+                            <p class="">Period Assignment 2022</p>
+                           </div>
+                        <i class="fa-regular fa-calendar"></i>
+                        </div>
+                        <div id="regions_div" class=""></div>
+                        <div class="socialSourceCard mt-5 p-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="CustomerByCountry mt-2">
+                                    <p class="m-0">Social Sources</p>
+                                    <p class="">Total traffic in a week</p>
+                                </div>
+                                <img src="images/filter.png" alt="">
+                            </div>
+                            <div class="card innerCard p-4 rounded-5 ">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="card_content">
+                                            <div class="content">
+                                                <p class="m-0">Website</p>
+                                                <p>2300</p>
+                                            </div>
+                                            <div class="content">
+                                                <p class="m-0">E-commerce</p>
+                                                <p>2300</p>
+                                            </div>
+                                            <div class="content">
+                                                <p class="m-0">Instagram</p>
+                                                <p>2300</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div id="donutchart"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p>See More Statistic</p>
+                                        <button class=" rounded-pill seeDetailsBtn">See Details</button>
+                                    </div>
+                                </div>
+                                
+                              
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+
+  <script src="js/app.js"></script>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
